@@ -18,10 +18,11 @@ converted = TRUE
 #Fst flag
 #Fst code adds a lot of time to run the code 
 #so if you don't want to run it, keep Fst off by setting it FALSE
-f <- TRUE
+boolean_fst <- FALSE
 
 #Set working directory
-mydir = "C:\\Users\\kayle\\Documents\\Quercus_IUCN_samp_sims\\Simulations"
+#mydir = "C:\\Users\\kayle\\Documents\\Quercus_IUCN_samp_sims\\Simulations"
+mydir = "C:\\Users\\eschumacher\\Documents\\GitHub\\Quercus_IUCN_samp_sims\\Simulations"
 setwd(mydir)
 
 #creating a list of the species we have simulated
@@ -77,11 +78,11 @@ temp_genind_list <- list()
 #list of hierfstat
 temp_hierfstat <- list()
 
-##pwfst array
-pwfst_array = array(dim = c(4,4,100))
-
 ##min, max, mean of replicates 
 mean_max_min_fst = array(dim = c(3,100,12))
+
+##
+all_existing_by_sp_reps <- array(c(100,9,12))
 
 ###############################################################################################
 #SAMPLING
@@ -97,7 +98,7 @@ for(i in 1:length(species_list)) {
     temp_genind = read.genepop(list_files[[j]], ncode=3) 
     
     #calculating Fst
-    if(f == TRUE) {
+    if(boolean_fst == TRUE) {
       ##creating genind list for QUAC genind 
       temp_genind_list[[j]] <- temp_genind
       
@@ -105,12 +106,12 @@ for(i in 1:length(species_list)) {
       temp_hierfstat[[j]] <- genind2hierfstat(temp_genind_list[[j]])
       
       ##array to store all pwfst values
-      pwfst_array[,,j] <- pairwise.neifst(temp_hierfstat[[j]])
+      pwfst <- pairwise.neifst(temp_hierfstat[[j]])
       
       ##calculate statistics for QUAC - max, min, mean fst 
-      mean_max_min_fst[1,j,i] <- mean(pwfst_array[,,j], na.rm = TRUE)
-      mean_max_min_fst[2,j,i] <- min(pwfst_array[,,j], na.rm = TRUE)
-      mean_max_min_fst[3,j,i] <- max(pwfst_array[,,j], na.rm = TRUE)
+      mean_max_min_fst[1,j,i] <- mean(pwfst, na.rm = TRUE)
+      mean_max_min_fst[2,j,i] <- min(pwfst, na.rm = TRUE)
+      mean_max_min_fst[3,j,i] <- max(pwfst, na.rm = TRUE)
       
     }
     
@@ -145,8 +146,31 @@ for(i in 1:length(species_list)) {
         
         #saving the total alleles present across the populations for each species, and each replicate
         total_alleles_all_quercus[i,k,j] = total_alleles
+        
       }else {
-        break
+        
+
+        #First, calculate number of individuals per population
+        n_ind <- table(temp_genind@pop)
+        
+        ##Then create a genpop file for temp_genind
+        Spp_tot_genpop <- genind2genpop(temp_genind)
+        
+        ##separate by population 
+        Spp_tot_genind_sep <- seppop(temp_genind)
+        
+        ###Start sampling code 
+        ##determine alleles captured by sampling 
+      alleles_cap <- colSums(temp_genind@tab[rows_to_samp,], na.rm = T)
+        
+      #Fourth object: # of individuals per population
+      allele_cat_tot <- get.allele.cat(Spp_tot_genpop, c(1:5), 2, n_ind)
+      
+      
+      ##calculate the total number of alleles in each frequency category over 9 allele categories
+      for (a in 1:length(allele_cat_tot)) all_existing_by_sp_reps[j,a,i] <- sum((allele_cat_tot[[a]])>0,na.rm=T)
+    
+      
       }
     }
   }
@@ -156,7 +180,46 @@ for(i in 1:length(species_list)) {
 setwd("C:\\Users\\kayle\\Documents\\Quercus_IUCN_samp_sims\\R_scripts")
 save(all_quercus_results, file="all_quercus_results.Rdata")
 
-# #################################################################################################
+##write out boxplots 
+#mean fst
+pdf("G:\\Shared drives\\Emily_Schumacher\\sampling_tenoaks\\meanfst_bp.pdf", width = 10, height = 8)
+boxplot(mean_max_min_fst[1,,], names = c("QUAC","QUAR","QUBO","QUCA","QUCE","QUEN",
+                                         "QUGE","QUGR","QUHA","QUHI","QUOG","QUPA"))
+       
+dev.off()
+
+#min fst
+pdf("G:\\Shared drives\\Emily_Schumacher\\sampling_tenoaks\\minfst_bp.pdf", width = 10, height = 8)
+boxplot(mean_max_min_fst[2,,], names = c("QUAC","QUAR","QUBO","QUCA","QUCE","QUEN",
+                                         "QUGE","QUGR","QUHA","QUHI","QUOG","QUPA"))
+
+dev.off()
+
+#max fst
+pdf("G:\\Shared drives\\Emily_Schumacher\\sampling_tenoaks\\maxfst_bp.pdf", width = 10, height = 8)
+boxplot(mean_max_min_fst[3,,], names = c("QUAC","QUAR","QUBO","QUCA","QUCE","QUEN",
+                                         "QUGE","QUGR","QUHA","QUHI","QUOG","QUPA"))
+
+dev.off()
+
+
+###
+pwfst_table <- matrix(nrow = length(species_list), ncol = 3)
+
+for(j in 1:3){
+ for(i in 1:length(species_list)){
+  
+    pwfst_table[i,j] <- signif(mean(mean_max_min_fst[j,i,]), 3)
+  
+ }
+}
+rownames(pwfst_table) <- species_list
+colnames(pwfst_table) <- c('Mean_Fst',"Min_Fst", "Max_Fst")
+
+##write out csv of df 
+write.csv(pwfst_table, "G:\\Shared drives\\Emily_Schumacher\\sampling_tenoaks\\mean_pwfst.csv")
+
+???# #################################################################################################
 # #PROCESSING
 # 
 # #converting matrices to data frames
