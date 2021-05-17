@@ -39,6 +39,24 @@ species_list = c("\\q_acerifolia",
                  "\\q_oglethorpensis",
                  "\\q_pacifica")
 
+#add get allele cat function
+list_allele_cat<-c("global","glob_v_com","glob_com","glob_lowfr","glob_rare","reg_rare","loc_com_d1","loc_com_d2","loc_rare")
+
+###function
+source("G:/Shared drives/Emily_Schumacher/ten_oaks_gen/Fa_sample_funcs.R")
+##functions
+colMax <- function(data) sapply(data, max, na.rm = TRUE)
+sample.pop<-function(genind_obj,vect_pop_ID,vect_samp_sizes){
+  p<-length(vect_pop_ID)
+  if (p>1) {
+    for (p in 1:length(vect_pop_ID))
+      alleles[p,]<-colSums(genind_obj[[vect_pop_ID[p]]]@tab[sample(1:nrow(genind_obj[[vect_pop_ID[p]]]@tab), vect_samp_sizes[p]),],na.rm=T)
+    alleles<-colSums(alleles)
+  } else {alleles<-colSums(genind_obj[[vect_pop_ID[p]]]@tab[sample(1:nrow(genind_obj[[vect_pop_ID[p]]]@tab), vect_samp_sizes[p]),],na.rm=T)}
+  
+  alleles
+}    
+
 #defining the maximum number of individuals we want to sample
 #for practical purposes, this will be 500 indivduals 
 max_sample_size = 500
@@ -133,23 +151,18 @@ for(i in 1:length(species_list)) {
         #saving the alleles sampled
         if(k == 1) {
           sample_n_alleles = sum(temp_genind@tab[rows_to_samp,]>0)
-        } else {
+       } else {
           sample_n_alleles = sum(colSums(temp_genind@tab[rows_to_samp,])>0)
         }
         
-        #calculating the total alleles
-        total_alleles = ncol(temp_genind@tab)
+        ##determine alleles captured by sampling 
+        #alleles_cap <- colSums(temp_genind@tab[sample_n_alleles,], na.rm = T)
         
-        #saving the proportion of alleles captured -> alleles sampled/total alleles
-        #represents genetic conservation success
-        all_quercus_results[i,k,j] = sample_n_alleles/total_alleles
         
-        #saving the total alleles present across the populations for each species, and each replicate
-        total_alleles_all_quercus[i,k,j] = total_alleles
+      } else {
         
-      }else {
-        
-
+        alleles_cap <- colSums(temp_genind@tab[rows_to_samp,], na.rm = T)
+    
         #First, calculate number of individuals per population
         n_ind <- table(temp_genind@pop)
         
@@ -159,17 +172,12 @@ for(i in 1:length(species_list)) {
         ##separate by population 
         Spp_tot_genind_sep <- seppop(temp_genind)
         
-        ###Start sampling code 
-        ##determine alleles captured by sampling 
-      alleles_cap <- colSums(temp_genind@tab[rows_to_samp,], na.rm = T)
+        ##get categories for all alleles captured 
+        allele_cat_tot <- get.allele.cat(Spp_tot_genpop, c(1:5), 2, n_ind)
         
-      #Fourth object: # of individuals per population
-      allele_cat_tot <- get.allele.cat(Spp_tot_genpop, c(1:5), 2, n_ind)
-      
-      
-      ##calculate the total number of alleles in each frequency category over 9 allele categories
-      for (a in 1:length(allele_cat_tot)) all_existing_by_sp_reps[j,a,i] <- sum((allele_cat_tot[[a]])>0,na.rm=T)
-    
+        ##calculate the total number of alleles in each frequency category over 9 allele categories
+        for (a in 1:length(allele_cat_tot)) all_existing_by_sp_reps[j,a,i] <- sum((allele_cat_tot[[a]])>0,na.rm=T)
+        
       
       }
     }
