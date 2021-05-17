@@ -99,15 +99,26 @@ temp_hierfstat <- list()
 mean_max_min_fst = array(dim = c(3,100,14))#Fst run on 100 replicates
 
 ##
-all_cap_samp <- array(dim = c(100,9,12))
+all_cap_samp <- array(dim = c(100, length(list_allele_cat), length(species_list)))
 
 ##
-all_cap_samp_per <- array(dim = c(100,9,12))
+all_cap_samp_per <- array(dim = c(100, length(list_allele_cat), length(species_list)))
+
+##species abbrevs 
+species_abbrevs <- c("QUAC","QUAR","QUBO","QUCA","QUCE","QUEN","QUGE","QUGR","QUHA","QUHI","QUOG","QUPA")
 
 ##allelic existing by species table 
-all_existing_by_sp_df <- matrix(nrow = 12, ncol = 9)
+all_existing_by_sp_df <- matrix(nrow = length(species_list), ncol = length(list_allele_cat))
 colnames(all_existing_by_sp_df) <- list_allele_cat
-rownames(all_existing_by_sp_df) <- species_list
+rownames(all_existing_by_sp_df) <- species_abbrevs
+
+##alleles sampled 
+all_cap_cat_per <- matrix(nrow = length(species_list), ncol = length(list_allele_cat))
+colnames(all_cap_cat_per) <- list_allele_cat
+rownames(all_cap_cat_per) <- species_abbrevs
+
+##combo data frame with alleles captured by category vs. % captured 
+all_cap_cat_df <- matrix(nrow = length(species_list), ncol = length(list_allele_cat))
 
 ###############################################################################################
 #SAMPLING/Fst
@@ -184,12 +195,24 @@ for(i in 1:length(species_list)) {
       ##allelic capture code 
       for (b in 1:length(allele_cat_tot)) all_cap_samp[j,b,i] <- sum(alleles_cap[allele_cat_tot[[b]]]>0)
       
-      ##percent captured 
+      ##percent captured data frame 
       all_cap_samp_per[,,i] <- all_cap_samp[,,i]/all_existing_by_sp_reps[,,i]
       
+      ##all_cap_cat
+      for (c in 1:length(allele_cat_tot)) all_cap_cat_per[i,c] <- round(mean(all_cap_samp_per[,c,i])*100,3)
+      
+      ##loop to write out nice df 
+      for(d in 1:length(species_abbrevs)){
+        for(e in 1:length(allele_cat_tot)){
+          all_cap_cat_df[d,e] <- paste0(signif(all_cap_cat_per[d,e], 3), "%", " ", "(", signif(all_existing_by_sp_df[d,e],3), ")")
+        }
+      }  
       
        
    }
 }
 
+##write out alleles existing within each categories  
+setwd("C:\\Users\\eschumacher\\Documents\\GitHub\\Quercus_IUCN_samp_sims\\Results")
+write.csv()
 
