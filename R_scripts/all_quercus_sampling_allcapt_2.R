@@ -53,6 +53,9 @@ species_list = c("\\q_acerifolia",
                  "\\q_pacifica",
                  "\\q_tomentella")
 
+##allele frequency categories 
+list_allele_cat<-c("global","glob_v_com","glob_com","glob_lowfr","glob_rare","reg_rare","loc_com_d1","loc_com_d2","loc_rare")
+
 #defining the maximum number of individuals we want to sample
 #for practical purposes, this will be 500 indivduals 
 max_sample_size = 500
@@ -98,6 +101,14 @@ mean_max_min_fst = array(dim = c(3,100,14))#Fst run on 100 replicates
 ##
 all_cap_samp <- array(dim = c(100,9,12))
 
+##
+all_cap_samp_per <- array(dim = c(100,9,12))
+
+##allelic existing by species table 
+all_existing_by_sp_df <- matrix(nrow = 12, ncol = 9)
+colnames(all_existing_by_sp_df) <- list_allele_cat
+rownames(all_existing_by_sp_df) <- species_list
+
 ###############################################################################################
 #SAMPLING/Fst
 
@@ -125,6 +136,9 @@ for(i in 1:length(species_list)) {
        
        ##calculate the total number of alleles in each frequency category over 9 allele categories
        for (a in 1:length(allele_cat_tot)) all_existing_by_sp_reps[j,a,i] <- sum(allele_cat_tot[[a]]>0,na.rm=T)
+       
+       ##create output for all alleles captured by 
+       for(b in 1:length(allele_cat_tot)) all_existing_by_sp_df[i,b] <- mean(all_existing_by_sp_reps[,b,i])
        
       ###now start sampling code 
       #defining the first and last individuals of the entire population, so we know where to sample between
@@ -164,11 +178,14 @@ for(i in 1:length(species_list)) {
        }
          
        }
-      ##
+      ##start adding allelic capture code 
       alleles_cap <- colSums(temp_genind@tab[rows_to_samp,], na.rm = T)
       
       ##allelic capture code 
       for (b in 1:length(allele_cat_tot)) all_cap_samp[j,b,i] <- sum(alleles_cap[allele_cat_tot[[b]]]>0)
+      
+      ##percent captured 
+      all_cap_samp_per[,,i] <- all_cap_samp[,,i]/all_existing_by_sp_reps[,,i]
       
       
        
