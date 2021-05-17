@@ -112,6 +112,11 @@ all_existing_by_sp_df <- matrix(nrow = length(species_list), ncol = length(list_
 colnames(all_existing_by_sp_df) <- list_allele_cat
 rownames(all_existing_by_sp_df) <- species_abbrevs
 
+##alleles captured by sampling mean 
+all_cap_mean <- matrix(nrow = length(species_list), ncol = length(list_allele_cat))
+colnames(all_cap_mean) <- list_allele_cat
+rownames(all_cap_mean) <- species_abbrevs
+
 ##alleles sampled 
 all_cap_cat_per <- matrix(nrow = length(species_list), ncol = length(list_allele_cat))
 colnames(all_cap_cat_per) <- list_allele_cat
@@ -174,15 +179,15 @@ for(i in 1:length(species_list)) {
              sample_n_alleles = sum(colSums(temp_genind@tab[rows_to_samp,])>0)
            }
        
-      #     #calculating the total alleles
-      #     total_alleles = ncol(temp_genind@tab)
-      # 
-      #     #saving the proportion of alleles captured -> alleles sampled/total alleles
-      #     #represents genetic conservation success
-      #     final_quercus_results[k,j,i] = sample_n_alleles/total_alleles 
-      # 
-      #     #saving the total alleles present across the populations for each species, and each replicate
-      #     final_alleles_all_quercus[k,j,i] = total_alleles 
+           #calculating the total alleles
+           total_alleles = ncol(temp_genind@tab)
+       
+           #saving the proportion of alleles captured -> alleles sampled/total alleles
+           #represents genetic conservation success
+           final_quercus_results[k,j,i] = sample_n_alleles/total_alleles 
+       
+           #saving the total alleles present across the populations for each species, and each replicate
+           final_alleles_all_quercus[k,j,i] = total_alleles 
            
        }else {
         break
@@ -195,6 +200,9 @@ for(i in 1:length(species_list)) {
       ##allelic capture code 
       for (b in 1:length(allele_cat_tot)) all_cap_samp[j,b,i] <- sum(alleles_cap[allele_cat_tot[[b]]]>0)
       
+      ##alleles per category captured by sampling 
+      for(b in 1:length(allele_cat_tot)) all_cap_mean[i,b] <- mean(all_cap_samp[,b,i])
+      
       ##percent captured data frame 
       all_cap_samp_per[,,i] <- all_cap_samp[,,i]/all_existing_by_sp_reps[,,i]
       
@@ -204,15 +212,16 @@ for(i in 1:length(species_list)) {
       ##loop to write out nice df 
       for(d in 1:length(species_abbrevs)){
         for(e in 1:length(allele_cat_tot)){
-          all_cap_cat_df[d,e] <- paste0(signif(all_cap_cat_per[d,e], 3), "%", " ", "(", signif(all_existing_by_sp_df[d,e],3), ")")
+          all_cap_cat_df[d,e] <- paste0(signif(all_cap_cat_per[d,e], 3), "%", " ", "(", signif(all_cap_mean[d,e],3), ")")
         }
       }  
-      
-       
+
    }
 }
 
 ##write out alleles existing within each categories  
 setwd("C:\\Users\\eschumacher\\Documents\\GitHub\\Quercus_IUCN_samp_sims\\Results")
-write.csv()
+write.csv(all_existing_by_sp_df, "all_existing_by_sp_df.csv")
+write.csv(all_cap_cat_df, "all_cap_cat_df.csv")
+
 
