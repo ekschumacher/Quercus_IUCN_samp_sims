@@ -12,7 +12,8 @@ allpop_genind_path <- "G:\\My Drive\\Hoban_Lab_Docs\\Projects\\Ten_Oaks\\DataFil
 tenoak_df_path <- "G:\\My Drive\\Hoban_Lab_Docs\\Projects\\Ten_Oaks\\DataFiles\\Oak_Score_Df"
 
 ##species list 
-oak_species_list <- c("QUAC","QUAJ","QUHI","QUPA")
+oak_species_list <- c("QUAC","QUBO","QUGE",
+                      "QUHA","QUHI","QUOG","QUPA")
 
 #############################################
 ############ Conversion Code ################
@@ -42,15 +43,12 @@ ten_oaks_genind_wild_list <- list.files(pattern = "_wild_pop.gen$")
 ##conversion list
 tenoak_wild_genind_list <- list()
 
-##read in data frame 
-#tenoak_wild_df_list <- list.files(path = tenoak_df_path, 
-    #                              pattern = "_wild_pops.csv$")
-
-##storage list for data frames 
-#tenoak_wild_dfs <- list()
-
 ##create data frame
 fst_df <- matrix(nrow = 3, ncol = 7)
+
+##name fst data frame for all oaks 
+rownames(fst_df) <- c("Mean_Fst","Min_Fst", "Max_Fst")
+colnames(fst_df) <- oak_species_list
 
 ##loop to load in genind files
 for(o in 1:length(ten_oaks_genind_wild_list)){
@@ -82,3 +80,8 @@ for(o in 1:length(ten_oaks_genind_wild_list)){
   fst_df[2,o] <- min(fst_spp, na.rm = T)
   fst_df[3,o] <- max(fst_spp, na.rm = T)
 }
+
+##write out data frame of all fst values 
+fst_df <- signif(fst_df, 3)
+
+write.csv(fst_df, "C:\\Users\\eschumacher\\Documents\\GitHub\\Quercus_IUCN_samp_sims\\Results\\fst_df.csv")
