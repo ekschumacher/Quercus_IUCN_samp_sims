@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="56e9c560-bd2a-11dd-b15e-b8a03c50a862"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/xxoo68</alternateIdentifier>
+        <alternateIdentifier>http://ipt.idigbio.org/resource?r=lsu-vascularplants</alternateIdentifier>
+        <alternateIdentifier>56e9c560-bd2a-11dd-b15e-b8a03c50a862</alternateIdentifier>
+        <alternateIdentifier>http://sernecportal.org/portal/collections/misc/collprofiles.php?collid=210</alternateIdentifier>
+        <alternateIdentifier>7984</alternateIdentifier>
+    <title>LSU Shirley C. Tucker Herbarium at Louisiana State University - Vascular Plants</title>
+    <creator>
+    <individualName>
+<givenName>Jennie</givenName>          <surName>Kluse</surName>
+    </individualName>
+<organizationName>Louisiana State University</organizationName><positionName>Collections Manager</positionName>    <address>
+<deliveryPoint>103 Life Science Building</deliveryPoint><city>Baton Rouge</city><administrativeArea>Louisiana</administrativeArea><postalCode>70803-1705</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>jkluse@lsu.edu</electronicMailAddress><onlineUrl>http://www.herbarium.lsu.edu/</onlineUrl>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Jennie</givenName>          <surName>Kluse</surName>
+    </individualName>
+<organizationName>Louisiana State University</organizationName><positionName>Collections Manager</positionName>    <address>
+<deliveryPoint>103 Life Science Annex Building</deliveryPoint><city>Baton Rouge</city><administrativeArea>Louisiana</administrativeArea><postalCode>70803-1705</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>jkluse@lsu.edu</electronicMailAddress><onlineUrl>http://www.herbarium.lsu.edu/</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Joanna</givenName>          <surName>McCaffrey</surName>
+    </individualName>
+<organizationName>iDigBio</organizationName><positionName>Biodiversity Informatics Manager</positionName>    <address>
+<city>Gainesville</city><administrativeArea>Florida</administrativeArea><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>jmccaffrey@flmnh.ufl.edu</electronicMailAddress><onlineUrl>https://www.idigbio.org</onlineUrl>    <role>PROGRAMMER</role>
+    </associatedParty>
+      <pubDate>
+      2018-06-21
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>Shirley C. Tucker Herbarium at Louisiana State University, Vascular Plant Collection: ca. 159,000 specimens, particularly from Louisiana and the Southeast, but also throughout North America and worldwide through exchange and collections. Families well-represented include Asteraceae, Fabaceae, Cyperaceae and Poaceae worldwide. Significant collections by Fr. G. Arsène, C. A. Brown, A. Featherman, N. F. Peterson, S.C. Tucker, L. E. Urbatsch, I. Vélez, and E. C. Wurzlow.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Occurrence</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Specimen</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">http://data.cyberfloralouisiana.com/lsu/</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Worldwide collection, with United States and Canada digitized.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-172.07</westBoundingCoordinate>
+                      <eastBoundingCoordinate>178.75</eastBoundingCoordinate>
+                      <northBoundingCoordinate>86.28</northBoundingCoordinate>
+                      <southBoundingCoordinate>-53.24</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>Families well-represented include Asteraceae, Fabaceae, Cyperaceae and Poaceae.</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Asteraceae</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Fabaceae</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Cyperaceae</taxonRankValue>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Family</taxonRankName>
+                        <taxonRankValue>Poaceae</taxonRankValue>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>biannually</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+<organizationName>Louisiana State University</organizationName><positionName>Collection Manager</positionName><electronicMailAddress>jkluse@lsu.edu</electronicMailAddress>      </contact>
+      <contact>
+    <individualName>
+<givenName>Jennie</givenName>          <surName>Kluse</surName>
+    </individualName>
+<organizationName>Louisiana State University</organizationName><positionName>Collections Manager</positionName>    <address>
+<deliveryPoint>103 Life Science Building</deliveryPoint><city>Baton Rouge</city><administrativeArea>Louisiana</administrativeArea><postalCode>70803-1705</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>jkluse@lsu.edu</electronicMailAddress><onlineUrl>http://www.herbarium.lsu.edu/</onlineUrl>      </contact>
+      <methods>
+            <methodStep>
+                <description>
+                    <para></para>
+                </description>
+            </methodStep>
+      </methods>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-07-19T20:27:21Z</dateStamp>
+      <citation>Kluse J (2018). LSU Shirley C. Tucker Herbarium at Louisiana State University - Vascular Plants. Louisiana State University Herbarium. Occurrence dataset https://doi.org/10.15468/xxoo68 accessed via GBIF.org on 2021-07-19.</citation>
+              <resourceLogoUrl>http://ipt.idigbio.org/logo.do?r=lsu-vascularplants</resourceLogoUrl>
+              <livingTimePeriod>1850 to present</livingTimePeriod>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>
