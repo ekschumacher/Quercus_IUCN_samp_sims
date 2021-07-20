@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="44525bc9-4412-441a-9890-1df3d289e3f6"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/8sx2ag</alternateIdentifier>
+        <alternateIdentifier>https://cch2.org/portal/collections/misc/collprofiles.php?collid=6</alternateIdentifier>
+        <alternateIdentifier>http://cch2.org/portal/collections/misc/collprofiles.php?collid=6</alternateIdentifier>
+        <alternateIdentifier>http://www.portal.capturingcaliforniasflowers.org/portal/collections/misc/collprofiles.php?collid=6</alternateIdentifier>
+    <title>SDSU - San Diego State University Herbarium</title>
+    <creator>
+<organizationName>CCH2 Portal</organizationName><electronicMailAddress>jyost@calpoly.edu</electronicMailAddress><onlineUrl>https://cch2.org/portal/index.php</onlineUrl>    </creator>
+    <metadataProvider>
+<organizationName>CCH2 Portal</organizationName><electronicMailAddress>jyost@calpoly.edu</electronicMailAddress><onlineUrl>https://cch2.org/portal/index.php</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+          <surName>Michael Simpson, Curator</surName>
+    </individualName>
+<electronicMailAddress>sdsuherbarium@sdsu.edu</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+      <pubDate>
+      2021-07-01
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The San Diego State University Herbarium (SDSU) is a depository of over 22,000 pressed and mounted plant specimens used in research and teaching. The purpose of these specimens is: 1) to serve as voucher documentation for research projects; 2) to serve as resources for plant identification; and 3) to serve as exemplars in plant courses. In addition, the herbarium both receives and provides loans of plant specimens used in active systematic research. The herbarium collection specializes in land plant specimens from San Diego County, California, and Baja California, with some collections from Australia, Chile, and the south Pacific.</para>
+    </abstract>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <contact>
+<organizationName>SDSU - San Diego State University Herbarium</organizationName><phone>619-594-8012</phone><electronicMailAddress>sdsuherbarium@sdsu.edu</electronicMailAddress><onlineUrl>http://www.sci.sdsu.edu/herb</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-07-19T20:27:20Z</dateStamp>
+      <citation>San Diego State University Herbarium (SDSU) (2021). SDSU - San Diego State University Herbarium. Occurrence dataset https://doi.org/10.15468/8sx2ag accessed via GBIF.org on 2021-07-19.</citation>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>
