@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="0c7a975e-9f63-4a0f-b8ce-e37f8f70e777"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/zmt7jk</alternateIdentifier>
+        <alternateIdentifier>https://intermountainbiota.org/portal/collections/misc/collprofiles.php?collid=442</alternateIdentifier>
+        <alternateIdentifier>http://intermountainbiota.org/portal/collections/misc/collprofiles.php?collid=442</alternateIdentifier>
+    <title>Weber State University Herbarium</title>
+    <creator>
+<organizationName>Consortium of Intermountain Herbaria</organizationName><onlineUrl>https://intermountainbiota.org/portal/index.php</onlineUrl>    </creator>
+    <metadataProvider>
+<organizationName>Consortium of Intermountain Herbaria</organizationName><onlineUrl>https://intermountainbiota.org/portal/index.php</onlineUrl>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+          <surName>Jim Cohen, Herbarium Curator</surName>
+    </individualName>
+<electronicMailAddress>jamescohen@weber.edu</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+      <pubDate>
+      2021-07-19
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The collection is estimated to include 29,080 specimens of vascular and nonvascular specimens.</para>
+    </abstract>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <contact>
+<organizationName>Weber State University Herbarium</organizationName><phone>[1] (801) 626-6182.</phone><electronicMailAddress>jamescohen@weber.edu</electronicMailAddress>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-07-19T20:27:13Z</dateStamp>
+      <citation>Weber State University (2021). Weber State University Herbarium. Occurrence dataset https://doi.org/10.15468/zmt7jk accessed via GBIF.org on 2021-07-19.</citation>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>
