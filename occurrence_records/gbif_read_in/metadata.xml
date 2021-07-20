@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="10.15468/dl.wmzdcp"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+        <alternateIdentifier>0327160-200613084148143</alternateIdentifier>
+    <title>GBIF Occurrence Download 10.15468/dl.wmzdcp</title>
+    <creator>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>    </metadataProvider>
+      <pubDate>
+      2021-07-19
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>A dataset containing all occurrences available in GBIF matching the query:
+{
+  &quot;and&quot; : [
+    &quot;TaxonKey is one of (Quercus acerifolia (E.J.Palmer) Stoynoff &amp; Hess, Quercus arkansana Sarg., Quercus austrina Small, Quercus boyntonii Beadle, Quercus cedrosensis C.H.Mull., Quercus engelmannii Greene, Quercus georgiana M.A.Curtis, Quercus canbyi Trel., Quercus havardii Rydb., Quercus hinckleyi C.H.Mull., Quercus oglethorpensis W.H.Duncan, Quercus pacifica Nixon &amp; C.H.Müll., Quercus tomentella Engelm.)&quot;,
+    &quot;BasisOfRecord is one of (Specimen, Human Observation, Fossil, Observation, Unknown evidence, Machine Observation, Material sample, Literature Occurrence)&quot;
+  ]
+}
+The dataset includes records from the following constituent datasets. The full metadata for each constituent is also included in this archive:
+1 records from Vascular Plant Collection - University of Washington Herbarium (WTU)
+1 records from Aranzadi Zientzi Elkartea
+1 records from Auckland Museum Botany Collection
+1 records from Herbarium Berolinense, Berlin (B)
+1 records from Herbarium Hamburgense
+1 records from Computarización del Herbario ENCB. Fase II. Base de datos de los ejemplares de la familia Burseraceae y Nyctaginaceae y base de datos digitalizada de los ejemplares tipo de plantas vasculares del Herbario de la Escuela Nacional de Ciencias Biológicas, IPN
+1 records from Moscow University Herbarium (MW)
+1 records from NCSM Herbarium Collection
+1 records from Bosque Mesófilo de Montaña de México
+1 records from IAN herbarium - Embrapa Amazônia Oriental - Herbário Virtual REFLORA
+1 records from Digitalización de la colección científica del Herbario de Querétaro &quot;Dr. Jerzy Rzedowski&quot; QMEX
+1 records from Muestreos y recolectas de flora endémica y casi-endémica de matorral costero y chaparral de la zona mediterránea Baja California, México
+1 records from The Vascular Plants Collection of the University of Goettingen
+1 records from Actualización e incremento de la base de datos del Herbario de la Benemérita Universidad Autónoma de Puebla
+1 records from University of Vermont, Pringle Herbarium
+1 records from IPA - Herbário - IPA Dárdano de Andrade Lima
+1 records from Weber State University Herbarium
+1 records from SP - Herbário do Estado &quot;Maria Eneyda P. Kaufmann Fidalgo&quot; - Coleção de Fanerógamas
+1 records from Herbario Nacional Colombiano (COL)
+1 records from Central Michigan University
+1 records from Royal BC Museum - Herbarium (V)
+1 records from University of Lethbridge Herbarium (LEA)
+1 records from USFS - New York City Tree Census - 1995
+2 records from CSIC-Real Jardín Botánico-Colección de Plantas Vasculares (MA)
+2 records from DAO Herbarium Type Specimens
+2 records from Pittsburg State University, Theodore M. Sperry Herbarium
+2 records from Lund Botanical Museum (LD)
+2 records from New Mexico Museum of Natural History and Science (NMMNH&amp;S) Herbarium specimens (Arctos)
+2 records from NMNH Paleobiology Specimen Records
+2 records from Geneva Herbarium – General Collection (G)
+2 records from Phanerogamic Botanical Collections (S)
+2 records from CSLA - Cal State LA Herbarium
+2 records from University of California Museum of Paleontology
+2 records from flora&amp;fauna(NIBR)2019
+2 records from Pl@ntNet observations
+2 records from Botanical Research Intitute of Texas
+3 records from Royal Museum of Central Africa - Metafro-Infosys - Xylarium
+3 records from LOB - California State University, Long Beach Herbarium
+3 records from Meise Botanic Garden Herbarium (BR)
+3 records from Marie-Victorin Herbarium (MT) - Plantes vasculaires
+3 records from Rutgers University, Chrysler Herbarium
+3 records from El banco de datos del Herbario HCIB en línea (Fase I): Implementación del Sistema Biótica
+3 records from Actualización y depuración de la base de datos del Herbario del Instituto de Ecología, AC, Centro Regional del Bajío. Fase 2
+3 records from Natural History Museum (London) Collection Specimens
+3 records from Natural History Museum, Vienna - Herbarium W
+4 records from MISS_DC_01MAR2006
+4 records from CHSC - CSU Chico, Chico State Herbarium - Vascular Plants
+4 records from Royal Botanic Garden Edinburgh Herbarium (E)
+4 records from Royal Botanic Gardens, Kew - Herbarium Specimens
+4 records from Vascular Plant Herbarium, Oslo (O) UiO
+4 records from University of Alberta Vascular Plant Herbarium (ALTA-VP)
+4 records from H.A. Stephens Herbarium
+5 records from BLM - National Landscape Monitoring Framework - Plants
+5 records from The Fungal, Lichen and Plant Collections at the Herbarium Marburgense
+5 records from SJSU - Carl W. Sharsmith Herbarium, San Jose State University
+5 records from Catálogo electrónico de especímenes depositados en el Herbario de la Universidad de Texas en Austin, Fase IV (Tipos)
+5 records from UAM Herbarium (ALA), Vascular Plant Collection (Arctos)
+5 records from UCSC Herbarium - Kenneth S. Norris Center for Natural History, University of California Santa Cruz
+6 records from International Barcode of Life project (iBOL)
+7 records from Fairchild Tropical Botanic Garden Virtual Herbarium Darwin Core format
+7 records from Kathryn Kalmbach Herbarium
+7 records from Intermountain Herbarium (Vascular plants &amp; algae)
+7 records from Inventario florístico de la Sierra de San Carlos, Tamaulipas
+8 records from MPM Milwaukee Public Museum Herbarium
+8 records from CONN
+8 records from HSC - Humboldt State University Vascular Plant Herbarium
+10 records from Western Carolina University Herbarium
+10 records from University of British Columbia Herbarium (UBC) - Vascular Plant Collection
+10 records from UCBG TAPIR Provider
+12 records from Buffalo Society of Natural Sciences Clinton Herbarium
+13 records from Flora del Parque Nacional Cumbres de Monterrey, Nuevo León, México
+14 records from Catálogo de autoridad taxonómica del género Quercus, Fagaceae en México
+15 records from Field Museum of Natural History (Botany)  Seed Plant Collection
+17 records from Digitalización y sistematización de las colecciones biológicas del INECOL (Herbario)
+17 records from SFV - California State University, Northridge
+17 records from SDSU - San Diego State University Herbarium
+18 records from UTEP Plants (Arctos)
+20 records from Etapa final de la captura y catalogación del Herbario del Instituto de Ecología, A. C., Centro Regional del Bajío
+21 records from Deaver Herbarium (Northern Arizona University)
+22 records from OBI - Robert F. Hoover Herbarium, Cal Poly State University
+23 records from MEXU/Plantas Vasculares
+23 records from CDA - California Department of Food and Agriculture
+24 records from Herbarium (UNA)
+24 records from Desert Botanical Garden Herbarium
+25 records from LSU Shirley C. Tucker Herbarium at Louisiana State University - Vascular Plants
+26 records from Eastern Kentucky University, Ronald L. Jones Herbarium
+26 records from Sistematización del Herbario Nacional Forestal Biól Luciano Vela Gálvez
+26 records from University of Colorado Museum of Natural History Herbarium Vascular Plant Collection
+27 records from University of South Carolina, A. C. Moore Herbarium
+28 records from University of South Florida Herbarium (USF)
+28 records from Naturalis Biodiversity Center (NL) - Botany
+28 records from Restauración y conservación de Isla Guadalupe
+30 records from Carnegie Museum of Natural History Herbarium
+32 records from Computarización del Herbario ENCB, IPN. Fase IV. Base de datos de la familia Pinaceae y de distintas familias de la clase Magnoliopsida depositadas en el Herbario de la Escuela Nacional de Ciencias Biológicas, IPN
+37 records from University of New Mexico Herbarium
+40 records from University of Tennessee Vascular Herbarium
+40 records from Catálogo electrónico de especímenes depositados en el Herbario de la Universidad de Texas en Austin, Fase IV (Ejemplaresimagenes)
+41 records from Riqueza y distribución de especies vegetales en la Península de Baja California
+43 records from The vascular plants collection (P) at the Herbarium of the Muséum national d&apos;Histoire Naturelle (MNHN - Paris)
+44 records from University of Michigan Herbarium
+48 records from University of Florida Herbarium (FLAS)
+59 records from North Carolina State University Vascular Plant Herbarium
+74 records from R. L. McGregor Herbarium Vascular Plants Collection
+80 records from Arizona State University Vascular Plant Herbarium
+129 records from Puntos de presencia en Baja California (Botany)
+131 records from Harvard University Herbaria: All Records
+142 records from Digitalización y Sistematización de las Colecciones Biológicas Nacionales del Instituto de Biología, UNAM (Plantas vasculares)
+150 records from UCSB - University of California Santa Barbara Herbarium
+151 records from Oklahoma Vascular Plants Database Provider
+175 records from UCR - University of California, Riverside Herbarium - Vascular Plants
+189 records from DAV - UC Davis Herbarium
+192 records from Plant Resources Center
+197 records from Tropicos Specimen Data
+200 records from CAS Botany (BOT)
+222 records from University of North Carolina at Chapel Hill Herbarium
+226 records from The New York Botanical Garden Herbarium (NY)
+232 records from NMNH Extant Specimen Records
+288 records from SD - SD Herbarium, San Diego Natural History Museum
+347 records from SBBG - Clifton Smith Herbarium, Santa Barbara Botanic Garden
+414 records from RSA - California Botanic Garden Herbarium
+510 records from NatureServe Network Species Occurrence Data
+995 records from iNaturalist Research-grade Observations
+</para>
+    </abstract>
+      <contact>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-07-19T20:27:34Z</dateStamp>
+      <citation identifier="10.15468/dl.wmzdcp">GBIF Occurrence Download 10.15468/dl.wmzdcp</citation>
+              <physical>
+                  <objectName>Darwin Core Archive</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>Darwin Core Archive</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">https://api.gbif.org/v1/occurrence/download/request/0327160-200613084148143.zip</url>
+                      </online>
+                  </distribution>
+              </physical>
+        </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

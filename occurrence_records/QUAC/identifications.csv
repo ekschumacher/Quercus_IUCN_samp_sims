@@ -1,0 +1,6 @@
+coreid,identifiedBy,identifiedByID,dateIdentified,identificationQualifier,scientificName,identificationIsCurrent,scientificNameAuthorship,genus,specificEpithet,taxonRank,infraspecificEpithet,identificationReferences,identificationRemarks,recordId,modified
+3471692,"Green, Thomas L.",,1998,,"Quercus acerifolia",0,"(Palmer) Stoynoff & Hess",Quercus,acerifolia,,,,,urn:uuid:b5e426f9-d58f-49a9-b47f-bdebb5dbb5a7,"2013-08-10 10:30:46"
+9302979,"Johnson, George",,09/21/1991,,"Quercus shumardii var. acerifolia",0,Palmer,,,,,,,urn:uuid:37444ac2-aaaf-43f0-a3a5-5c4826bcfcbc,"2020-05-08 09:40:41"
+12852838,"Demaree, Delzie",,1955-00-00,,"Quercus shumardii",0,Buckley,,,,,,,urn:uuid:a774e105-968f-46bc-8e7a-f0892287f5d6,"2017-06-30 10:44:35"
+12852988,"Tucker, G. E.",,1967-00-00,,"Quercus shumardii",0,Buckley,,,,,,,urn:uuid:e59d07b7-f270-4758-8a98-93bc134c4743,"2017-06-30 10:46:55"
+12852348,"Palmer, E. J.",,1925-00-00,,"Quercus shumardii var. acerifolia",0,Palmer,,,,,,,urn:uuid:fd62b436-ab5d-4605-9cf7-b7510821bdef,"2017-06-30 10:40:45"

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="db9e34bd-e647-46bd-9f9d-ffee56a5d3c4"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/fy8dsi</alternateIdentifier>
+        <alternateIdentifier>https://sernecportal.org/portal/collections/misc/collprofiles.php?collid=193</alternateIdentifier>
+        <alternateIdentifier>http://www.sernecportal.org/portal/collections/misc/collprofiles.php?collid=193</alternateIdentifier>
+        <alternateIdentifier>http://sernecportal.org/portal/collections/misc/collprofiles.php?collid=193</alternateIdentifier>
+    <title>Eastern Kentucky University, Ronald L. Jones Herbarium</title>
+    <creator>
+<organizationName>SERNEC</organizationName><electronicMailAddress>herrick.brown@gmail.com</electronicMailAddress><onlineUrl>https://sernecportal.org/portal/index.php</onlineUrl>    </creator>
+    <metadataProvider>
+<organizationName>SERNEC</organizationName><electronicMailAddress>herrick.brown@gmail.com</electronicMailAddress><onlineUrl>https://sernecportal.org/portal/index.php</onlineUrl>    </metadataProvider>
+    <associatedParty>
+<electronicMailAddress>Melanie.Link-Perez@eku.edu</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+      <pubDate>
+      2020-10-21
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>The EKU Herbarium (EKY) contains ~77,000 specimens and is the largest collection in Kentucky, and the second largest in the Kentucky-Tennessee region (surpassed only by the University of Tennessee). Most specimens are from central and eastern Kentucky, but also there is a good representation of western Kentucky and of the southeastern United States. There is also a set of woody plant specimens recently collected in Costa Rica. Nearly all specimens are of vascular plants. A number of important sets of specimens are housed at EKY, including sets from Lilley Cornett Woods, Maywoods Environmental and Educational Laboratory, Pine Mountain, Breaks Interstate Park, Brodhead Swamp, the headwater regions of the Green River, collections from the Kentucky State Nature Preserves Commission, collections of Mary Wharton, E.T. Browne, Raymond Athey, and county collections from Madison, Estill, Jackson, and Garrard Counties.</para>
+    </abstract>
+      <intellectualRights>
+        <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+      </intellectualRights>
+      <contact>
+<organizationName>Eastern Kentucky University, Ronald L. Jones Herbarium</organizationName><electronicMailAddress>Melanie.Link-Perez@eku.edu</electronicMailAddress><onlineUrl>http://herbarium.eku.edu/</onlineUrl>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-07-19T20:27:21Z</dateStamp>
+      <citation>Eastern Kentucky University, Ronald L. Jones Herbarium (EKY) (2020). Eastern Kentucky University, Ronald L. Jones Herbarium. Occurrence dataset https://doi.org/10.15468/fy8dsi accessed via GBIF.org on 2021-07-19.</citation>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

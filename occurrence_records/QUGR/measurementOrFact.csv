@@ -1,0 +1,3 @@
+coreid,measurementType,measurementTypeID,measurementValue,measurementValueID,measurementUnit,measurementDeterminedDate,measurementDeterminedBy,measurementRemarks
+9289610,"Phenology (ver 1.0)",http://purl.org/nevp/vocabulary/reproductive-phenology#01,reproductive,http://purl.org/nevp/vocabulary/reproductive-phenology_1.3#03,,2017-04-13T21:07:13Z,egbot,
+9289610,"Phenology: reproductive",http://purl.org/nevp/vocabulary/reproductive-phenology#03,flowering,http://purl.org/nevp/vocabulary/reproductive-phenology_1.3#06,,2017-04-13T21:07:26Z,egbot,

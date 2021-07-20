@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="84c00a71-0735-4a47-bf55-8556dcafa5c2"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/cbfpbk</alternateIdentifier>
+        <alternateIdentifier>https://bison.usgs.gov/ipt/resource?r=blm-nlmfd-plantcensus</alternateIdentifier>
+        <alternateIdentifier>84c00a71-0735-4a47-bf55-8556dcafa5c2</alternateIdentifier>
+    <title>BLM - National Landscape Monitoring Framework - Plants</title>
+    <creator>
+    <individualName>
+<givenName>Emily</givenName>          <surName>Karchergis</surName>
+    </individualName>
+<organizationName>National Operations Center</organizationName><positionName>Landscape Ecologist</positionName>    <address>
+<deliveryPoint>Denver Federal Center, Building 50</deliveryPoint><city>Denver</city><administrativeArea>Colorado</administrativeArea><postalCode>80225</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 303-236-0071</phone><electronicMailAddress>ekachergis@blm.gov</electronicMailAddress>    </creator>
+    <creator>
+    <individualName>
+<givenName>Annie</givenName>          <surName>Simpson</surName>
+    </individualName>
+<organizationName>USGS Core Science Systems</organizationName><positionName>biologist &amp; information scientist</positionName>    <address>
+<deliveryPoint>12201 Sunrise Valley Dr</deliveryPoint><city>Reston</city><administrativeArea>VA</administrativeArea><postalCode>20192</postalCode><country>UNITED_STATES</country>    </address>
+<phone>7036484281</phone><electronicMailAddress>asimpson@usgs.gov</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Emily</givenName>          <surName>Karchergis</surName>
+    </individualName>
+<organizationName>National Operations Center</organizationName><positionName>Landscape Ecologist</positionName>    <address>
+<deliveryPoint>Denver Federal Center, Building 50</deliveryPoint><city>Denver</city><administrativeArea>Colorado</administrativeArea><postalCode>80225</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 303-236-0071</phone><electronicMailAddress>ekachergis@blm.gov</electronicMailAddress>    </metadataProvider>
+    <associatedParty>
+    <individualName>
+<givenName>Emily</givenName>          <surName>Karchergis</surName>
+    </individualName>
+<organizationName>National Operations Center, Bureau of Land Management</organizationName><positionName>Landscape Ecologist</positionName>    <address>
+<deliveryPoint>Denver Federal Center, Building 50</deliveryPoint><city>Denver</city><administrativeArea>Colorado</administrativeArea><postalCode>80225</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 303-236-0071</phone><electronicMailAddress>ekachergis@blm.gov</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Derek</givenName>          <surName>Masaki</surName>
+    </individualName>
+<organizationName>US Geological Survey</organizationName><positionName>Geographer</positionName>    <address>
+<deliveryPoint>12201 Sunrise Valley Drive, Mailstop 302</deliveryPoint><city>Reston</city><administrativeArea>Virginia</administrativeArea><postalCode>20192</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 703 648 4365</phone><electronicMailAddress>dmasaki@usgs.gov</electronicMailAddress>    <role>PROCESSOR</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Matt</givenName>          <surName>Bobo</surName>
+    </individualName>
+<organizationName>Bureau of Land Management</organizationName><positionName>Lead Geospatial Manager</positionName>    <role>POINT_OF_CONTACT</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Christine</givenName>          <surName>Hawkinson</surName>
+    </individualName>
+<organizationName>Bureau of Land Management</organizationName><positionName>Bureau Data Administrator</positionName>    <role>POINT_OF_CONTACT</role>
+    </associatedParty>
+    <associatedParty>
+    <individualName>
+<givenName>Gordon</givenName>          <surName>Toevs</surName>
+    </individualName>
+<organizationName>Bureau of Land Management</organizationName><positionName>Program Manager and Data Steward</positionName>    <role>CUSTODIAN_STEWARD</role>
+    </associatedParty>
+      <pubDate>
+      2020-05-18
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>This table contains monitoring data collected nationally for the BLM Landscape Monitoring Framework. Data are collected in accordance with the BLM AIM (Assessment, Inventory, and Monitoring) Strategy.  The AIM Strategy specifies a probabilistic sampling design, standard, core indicators and methods, and electronic data capture and management.  Attributes (columns) include plant species occurrence information collected using the Plant Census protocol generalized to the county level (see Entity/Attribute section).  Species occurrences inform the AIM core indicators of vegetation composition, plant species of management concern, and invasive species.  Data were collected and managed through agreements with the USDA-Natural Resources Conservation Service and the Iowa State University Center for Survey Statistics and Methodology.
+Purpose: This dataset was created to monitor the status, condition and trend of national BLM resources in accordance with BLM policies.  Specifically, species occurrences inform the BLM AIM core indicators of vegetation composition, plant species of management concern, and invasive species.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Metadata</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>environment</keyword>
+              <keyword>biota</keyword>
+              <keywordThesaurus>ISO 19115 Topic Category</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>hydrology</keyword>
+              <keyword>endangered</keyword>
+              <keyword>range</keyword>
+              <keyword>vegetation</keyword>
+              <keyword>wildlife</keyword>
+              <keywordThesaurus>BLM Themes</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Landscape Monitoring Framework</keyword>
+              <keyword>AIM</keyword>
+              <keyword>National Resources Inventory</keyword>
+              <keyword>Plant Census</keyword>
+              <keywordThesaurus>BLM Assessment, Inventory, and Monitoring</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Observation</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <additionalInfo>
+          <para>These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.
+
+The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</para>
+      </additionalInfo>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <distribution scope="document">
+          <online>
+              <url function="information">https://landscape.blm.gov/geoportal/catalog/AIM/AIM.page</url>
+          </online>
+      </distribution>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>Utah, Colorado, Wyoming, Montana, Nevada, California, Oregon, New Mexico, Arizona, Idaho. Note that while Washington state falls within the described lat/lon quadrant, it is not mentioned as included in the metadata resource.</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-124.26</westBoundingCoordinate>
+                      <eastBoundingCoordinate>-102.68</eastBoundingCoordinate>
+                      <northBoundingCoordinate>48.9</northBoundingCoordinate>
+                      <southBoundingCoordinate>31.38</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+          <temporalCoverage>
+            <rangeOfDates>
+              <beginDate>
+                <calendarDate>      2004-09-01
+</calendarDate>
+              </beginDate>
+              <endDate>
+                <calendarDate>      2014-06-04
+</calendarDate>
+              </endDate>
+            </rangeOfDates>
+          </temporalCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>Plants, lichens, fungi. Kingdom cannot be globally specified on this dataset, although all but a handful of records are plants.</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Kingdom</taxonRankName>
+                        <taxonRankValue>Plantae</taxonRankValue>
+                          <commonName>plants</commonName>
+                    </taxonomicClassification>
+                    <taxonomicClassification>
+                          <taxonRankName>Kingdom</taxonRankName>
+                        <taxonRankValue>Fungi</taxonRankValue>
+                          <commonName>fungi</commonName>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <purpose>
+          <para>The Assessment, Inventory, and Monitoring (AIM) strategy provides a process for the Bureau of Land Management (BLM) to collect quantitative information on location and abundance, condition, and trend of renewable resources on the nation’s public lands. The Office of Management and Budget (OMB) conducted a program evaluation of the Bureau of Land Management (BLM) resource protection activities in 2004. They found gaps in the monitoring of resource conditions to support management decisions and that the BLM had no reliable mechanism for reporting on the condition of public lands above the local scale.  In response to OMB, the BLM developed a consistent monitoring approach called the Assessment, Inventory, and Monitoring (AIM) Strategy for Integrated Renewable Resources Management to standardize indicators and methods that were already commonly used across the BLM. The purpose of AIM is to move the BLM toward an integrated data collection approach that includes three components:
+     
+1) a standard set of core indicators and associated methods for terrestrial vegetation and soils as well as aquatic systems
+2) a statistically valid sampling framework that allows unbiased inference data sets collected in different areas and for different objectives to be aggregated at different scales (unbiased inferences)
+3) integration of remote sensing and ground-based technologies to maximize BLM’s capacity to cost-effectively address management questions at multiple spatial scales. 
+
+AIM also strives to allow management of data as a corporate asset for multiple uses and improve data accessibility for the field and Washington Office.</para>
+      </purpose>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Megan</givenName>          <surName>Walz</surName>
+    </individualName>
+<organizationName>Bureau of Land Management</organizationName><positionName>Resource Programs Data Coordinator</positionName>      </contact>
+      <contact>
+    <individualName>
+<givenName>Emily</givenName>          <surName>Karchergis</surName>
+    </individualName>
+<organizationName>National Operations Center</organizationName><positionName>Landscape Ecologist</positionName>    <address>
+<deliveryPoint>Denver Federal Center, Building 50</deliveryPoint><city>Denver</city><administrativeArea>Colorado</administrativeArea><postalCode>80225</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 303-236-0071</phone><electronicMailAddress>ekachergis@blm.gov</electronicMailAddress>      </contact>
+      <methods>
+            <methodStep>
+                <description>
+                    <para>Entities are single occurrences of plant species observed using the Plant Census method as part of the BLM National Landscape Monitoring Framework in 2011-2013. Attributes include states, counties, and species codes from the USDA PLANTS database for each occurrence. Species were obseved at points chosen using a probabilistic sample design across all BLM Lands in the lower 48 US states.  For the Plant Census protocol, see the following link from the NRCS and Iowa State University Center for Survey Statistics and Methodology:  http://www.nrisurvey.org/nrcs/Grazingland/2011/instructions/R-ch16_09vf.pdf</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>Plant species occurrence noted using the Plant Census protocol in the BLM National Landscape Monitoring Framework, generalized to the county level. The plant species observed within the plot as part of the plant census method (Chapter 16). The code corresponds to a code from the USDA PLANTS database.  The species list is from a 2004 PLANTS download for sample years 2011-2012;  for sample year 2014, the species list is from 2013.</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>Data were collected by trained data collectors with the USDA-NRCS and partner organizations.  They followed the NRI grazing land on-site data collection protocols (http://www.nrisurvey.org/nrcs/Grazingland/2011/instructions/instruction.htm).  Data were captured electronically and managed by the Iowa State University Center for Survey Statistics and Methodology (ISU CSSM).  
+Plant species name corresponding to the plant species code.  This is drawn from a 2004 version of the USDA Plants database.</para>
+                </samplingDescription>
+            </sampling>
+            <qualityControl>
+                <description>
+                    <para>This dataset has undergone rigorous QA/QC to ensure data quality. However, the BLM assumes no responsibility for errors or omissions.  No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data.  Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty.  In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</para>
+                </description>
+            </qualityControl>
+      </methods>
+
+      <project >
+          <title>BLM - National Landscape Monitoring Framework Data - Species Occurrences from Plant Census by County - 2011 and 2013</title>
+          <personnel>
+    <individualName>
+<givenName>Emily</givenName>          <surName>Kachergis</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+          </personnel>
+          <abstract>
+              <para>&lt;detailed&gt;&lt;attr&gt;&lt;attrlabl&gt;State&lt;/attrlabl&gt;&lt;attrdef&gt;FIPS code for the state&lt;/attrdef&gt;&lt;/attr&gt;&lt;attr&gt;&lt;attrlabl&gt;County&lt;/attrlabl&gt;&lt;attrdef&gt;FIPS code for the county&lt;/attrdef&gt;&lt;/attr&gt;&lt;enttyp&gt;&lt;enttypl&gt;Plant species occurrences&lt;/enttypl&gt;&lt;enttypd&gt;Plant species occurrence noted using the Plant Census protocol in the BLM National Landscape Monitoring Framework, generalized to the county level&lt;/enttypd&gt;&lt;/enttyp&gt;&lt;attr&gt;&lt;attrlabl&gt;Plant code&lt;/attrlabl&gt;&lt;attrdef&gt;The plant species observed within the plot as part of the plant census method (Chapter 16). The code corresponds to a code from the USDA PLANTS database.  The species list is from a 2004 PLANTS download for sample years 2011-2012;  for sample year 2014, the species list is from 2013.&lt;/attrdef&gt;&lt;/attr&gt;&lt;attr&gt;&lt;attrlabl&gt;Date and Time&lt;/attrlabl&gt;&lt;attrdef&gt;GPS capture date and time.  This should be the same as the sample date and time.&lt;/attrdef&gt;&lt;/attr&gt;&lt;attr&gt;&lt;attrlabl&gt;Species name (from USDA PLANTS 2004)&lt;/attrlabl&gt;&lt;attrdef&gt;Plant species name corresponding to the plant species code.  This is drawn from a 2004 version of the USDA Plants database.&lt;/attrdef&gt;&lt;/attr&gt;&lt;attr&gt;&lt;attrlabl&gt;SYMBOL&lt;/attrlabl&gt;&lt;attrdef&gt;Plant code from a 2004 version of the USDA PLANTS database.&lt;/attrdef&gt;&lt;/attr&gt;&lt;attr&gt;&lt;attrlabl&gt;SCIENTIFIC&lt;/attrlabl&gt;&lt;attrdef&gt;Scientific plant name corresponding to plant code.  This is from a 2004 version of the USDA PLANTS database.&lt;/attrdef&gt;&lt;/attr&gt;&lt;attr&gt;&lt;attrlabl&gt;COMMON&lt;/attrlabl&gt;&lt;attrdef&gt;Plant common name.  This is from a 2004 version of the USDA PLANTS database.&lt;/attrdef&gt;&lt;/attr&gt;&lt;/detailed&gt;&lt;/eainfo&gt;</para>
+          </abstract>
+          <funding>
+              <para>BLM</para>
+          </funding>
+            <studyAreaDescription>
+                <descriptor name="generic" citableClassificationSystem="false">
+                    <descriptorValue>This dataset was created to monitor the status, condition and trend of national BLM resources in accordance with BLM policies.  Specifically, species occurrences inform the BLM AIM core indicators of vegetation composition, plant species of management concern, and invasive species.</descriptorValue>
+                </descriptor>
+            </studyAreaDescription>
+            <designDescription>
+                <description>
+                    <para>Data were collected by trained data collectors with the USDA-NRCS and partner organizations.  They followed the NRI grazing land on-site data collection protocols (http://www.nrisurvey.org/nrcs/Grazingland/2011/instructions/instruction.htm).  Data were captured electronically and managed by the Iowa State University Center for Survey Statistics and Methodology (ISU CSSM).  This dataset has undergone rigorous QA/QC to ensure data quality.</para>
+                </description>
+            </designDescription>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2021-07-19T20:27:17Z</dateStamp>
+      <citation identifier="http://www.blm.gov/style/medialib/blm/wo/blm_library/tech_notes.Par.24137.File.dat/TN_445.pdf">Karchergis E, Simpson A (2020). BLM - National Landscape Monitoring Framework - Plants. Version 1.4. United States Geological Survey. Occurrence dataset https://doi.org/10.15468/cbfpbk accessed via GBIF.org on 2021-07-19.</citation>
+              <resourceLogoUrl>https://bison.usgs.gov/ipt/logo.do?r=blm-nlmfd-plantcensus</resourceLogoUrl>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

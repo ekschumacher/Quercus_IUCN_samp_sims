@@ -1,0 +1,5 @@
+coreid,identifiedBy,identifiedByID,dateIdentified,identificationQualifier,scientificName,identificationIsCurrent,scientificNameAuthorship,genus,specificEpithet,taxonRank,infraspecificEpithet,identificationReferences,identificationRemarks,recordId,modified
+3471702,"Green, Thomas L.",,1997,,"Quercus oglethorpensis",0,Duncan,Quercus,oglethorpensis,,,,,urn:uuid:a719e368-0f02-4e2d-91f6-414b5cf04ae1,"2013-08-10 10:30:46"
+6371087,"J.H. Hardin",,1986,,"Quercus oglethorpensis",1,Duncan,,,,,,,urn:uuid:06187071-50ae-4e9f-8a78-54e22df7a9ab,"2015-03-25 00:00:44"
+6371090,"J.H. Hardin",,1986,,"Quercus oglethorpensis",1,"Duncan x Q alba L.",,,,,,,urn:uuid:25210e71-194c-4069-83bd-ca528a603cd7,"2015-03-25 00:00:44"
+23000938,"not specified",,"not specified",,"Quercus oglethorpensis W. H. Duncan",0,"W. H. Duncan",,,,,,,urn:uuid:95b0260f-522c-4224-b7d1-e3a9a76fdfdd,"2020-02-13 13:52:16"
