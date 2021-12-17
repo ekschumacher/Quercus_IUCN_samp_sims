@@ -1,5 +1,0 @@
-coreid,identifiedBy,identifiedByID,dateIdentified,identificationQualifier,scientificName,identificationIsCurrent,scientificNameAuthorship,genus,specificEpithet,taxonRank,infraspecificEpithet,identificationReferences,identificationRemarks,recordId,modified
-9289610,"Nelson, John",,s.d.,,Quercus,0,L.,,,,,,,urn:uuid:10609596-efe5-4828-befc-9d938bf73995,"2020-05-08 09:40:41"
-13562581,Unknown,,Unknown,,"Quercus canbyi",0,,,,,,,,urn:uuid:a5f48fbc-7904-4452-b31d-ed36cabec7cb,"2017-03-21 16:31:24"
-23003957,"not specified",,"not specified",,"Quercus graciliformis C. H. Müller",0,"C. H. Müller",,,,,,,urn:uuid:bd0bcbc7-40b5-441d-8b74-ca261ffb04a3,"2020-02-13 13:52:16"
-23027470,"not specified",,"not specified",,"Quercus graciliformis f. parvilobata C. H. Müller",0,"C. H. Müller",,,,,,,urn:uuid:17a57a66-8488-4cd7-83d1-74eaba46b96f,"2020-02-13 13:52:16"
