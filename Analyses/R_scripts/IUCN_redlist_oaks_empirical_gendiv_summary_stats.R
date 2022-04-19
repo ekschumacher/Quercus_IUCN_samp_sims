@@ -1,3 +1,9 @@
+###This script was created by Emily Schumacher
+##for use in Kaylee Rosenberger's manuscript on predicting minimum 
+#sample size on the 14 IUCN red listed oaks. 
+#This script specifically calculates the genetic diversity levels in 
+#empirical data sets. 
+
 #####################
 #     Libraries     #
 #####################

@@ -1,14 +1,8 @@
-###These are the next steps in calculating genetic diversity 
-##First, we tested linkage disequilibrium, null alleles, and Hardy Weinberg 
-#equilibrium. Next, a data frame including expected heterozygosity, 
-#allelic richness, number of alleles, mean longtitude and latitude 
-#for wild populations, and individual numbers. 
-#This table is included in full in the supplemental text of this manuscript.
-#When files are referred to as "clean" that means individuals 
-#that are clones and indviduals with too much missing data have been removed. 
-#When files and objects are titled "red" that means they have been reduced
-#for relatedness (25% or more related individuals are reduced to one individual
-#per phenotype)
+###This script was created by Emily Schumacher and Austin Koontz 
+##for use in Kaylee Rosenberger's manuscript on predicting minimum 
+#sample size on the 14 IUCN red listed oaks. 
+#This script specifically calculates the genetic diversity levels in 
+#simulated data sets. 
 
 #########################
 #        Libraries      #
