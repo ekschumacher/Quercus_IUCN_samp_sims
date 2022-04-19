@@ -45,8 +45,10 @@ Rscripts:
 <ul><li>Analyses</li></ul>
 <ul><ul><li>Description: All input files utilized for generating butternut's species distribution model, habitat suitability maps, and projecting the habitat suitability maps into the past.</li></ul></ul>
 <ul><ul><li>R_Scripts</li></ul></ul>
+<ul><ul><ul><li>Reduce_Points_Mapping</li></ul></ul></ul>
+<ul><ul><ul><li>IUCN_redlist_oaks_empirical_gendiv_summary_stats</li></ul></ul></ul>
+<ul><ul><ul><li>IUCN_redlist_oaks_simulation_gendiv_summary_stats</li></ul></ul></ul>
 <ul><ul><li>Results</li></ul></ul>
-
 <ul><li>Data_Files</li></ul>
 <ul><ul><li>Description: Genepop objects generated from empirical genetic diversity data collection on <i>Quercus acerifolia</i>, <i>Quercus hinckleyii</i>, <i>Quercus pacifica</i>, and <i>Quercus tomentella</i>. </li></ul></ul>
 <ul><ul><li>QUAC</li></ul></ul>
@@ -56,4 +58,4 @@ Rscripts:
 
 <ul><li>Figures</li></ul>
 
-<ul><li>Quercus_IUCN_Mapping</li></ul>
+<ul><li>Mapping</li></ul>
