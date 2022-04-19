@@ -25,19 +25,19 @@ We ran a generalized linear model (GLM) to determine the minimum sample sizes ne
 <b><p><h1 style="color:red;font-size:20px;">Files Types</b></p></h1>
 
 Parameter files:
-.par .txt
-Edited in text editor Notepad++
-These are input to the software fastsimcoal to create genetic datasets The .par signifies parameter files. They contain information to create the genetic datasets via a coalescent simulation, including population sizes and migration rates. Parameter files are written in the text editor Notepad++
+<p>.par .txt</p>
+<p>Edited in text editor Notepad++</p>
+<p>These are input to the software fastsimcoal to create genetic datasets The .par signifies parameter files. They contain information to create the genetic datasets via a coalescent simulation, including population sizes and migration rates. Parameter files are written in the text editor Notepad++
 You can run fastsimcoal through the command line with the prompt: fsc26 <\file_name> -g 1 -n 1000
-Here we used 1 for the genetic data type of all simulations, representing diploid individuals and 1000 for 1000 simulation replicates.
+Here we used 1 for the genetic data type of all simulations, representing diploid individuals and 1000 for 1000 simulation replicates.</p>
 
 Genotype files:
-.arp .gen
-Arlequin files are the outputs of the empirical results and simulations - .arp - which are then converted to genepop files (.gen) which are then read into R using adegenet as genind objects. 
+<p>.arp .gen</p>
+<p>Arlequin files are the outputs of the empirical results and simulations - .arp - which are then converted to genepop files (.gen) which are then read into R using adegenet as genind objects. </p>
 
 Rscripts:
-.R .Rdata
-For this project, R scripts were used to import .arp files into R for conversion to .gen files through adegenet package, convert .gen files to genind objects through adegenet package, analyze data through functions associated with the adegenet package.
+<p>.R .Rdata</p>
+<p>For this project, R scripts were used to import .arp files into R for conversion to .gen files through adegenet package, convert .gen files to genind objects through adegenet package, analyze data through functions associated with the adegenet package. </p>
 
 
 <b><p><h1 style="color:red;font-size:20px;">Directory Contents</b></p></h1>
